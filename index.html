@@ -10,22 +10,70 @@
 <body class="text-white bg-darkblue">
     <nav class="navbar navbar-expand-md navbar-dark bg-black">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler me-lg-0 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand me-lg-5 me-md-3" href="#">
                 <img src="https://dummyimage.com/154x42/fff/aaa" alt="">
             </a>
-            <div class="dropdown text-end order-md-1">
-                <button class="d-flex align-items-center bg-transparent border-0 link-light text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" [role="button"]>
-                    <span class="material-icons">account_circle</span>
-                    <span class="d-md-block d-none px-2 fw-bold">YuHsuan</span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end mt-2 text-small" aria-labelledby="dropdownUser1">
-                    <li><a class="dropdown-item" href="#">帳戶總覽</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">登出</a></li>
-                </ul>
+            <div class="d-flex align-items-center order-md-1">
+                <div class="dropdown text-end">
+                    <button class="d-flex align-items-center p-0 bg-transparent border-0 link-light text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" [role="button"]>
+                        <span class="material-icons-round">account_circle</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end px-5 py-3 mt-2 rounded-4 text-small" aria-labelledby="dropdownUser1">
+                        <li>
+                            <div class="dropdown-user d-flex align-items-center">
+                                <span class="material-icons-round">account_circle</span>
+                                <span class="d-block h6 ps-2 pe-3 mb-0">
+                                    <span class="d-block">YuHsuan</span>
+                                    <span class="d-block opacity-50">wangyuhsuan@gmail.com</span>
+                                </span>
+                                <span class="material-icons-round">chevron_right</span>
+                            </div>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="h5 fw-normal mb-0">帳戶總覽</span><span class="material-icons-round">chevron_right</span>
+                            </div>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <span class="h5 fw-normal mb-0">提幣</span><span class="material-icons-round">chevron_right</span>
+                            </div>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <button class="d-block btn link-light w-100 p-0 text-start border-0">
+                                <span class="h5 fw-normal mb-0">登出</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown text-end ms-lg-5 ms-2">
+                    <button class="d-flex align-items-center p-0 bg-transparent border-0 link-light text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false" [role="button"]>
+                        <span class="material-icons-round">settings</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end px-5 py-3 mt-2 rounded-4 text-small" aria-labelledby="dropdownUser2">
+                        <li>
+                            <div class="text-nowrap">
+                                <div class="item-title h6 mb-1 fw-normal opacity-50">語言設定</div>
+                                <button class="btn btn-midblue px-3 py-2 border-0" role="button">繁體中文</button>
+                                <button class="btn btn-outline-midblue text-light px-3 py-2 border-0" role="button">English</button>
+                            </div>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <div class="text-nowrap">
+                                <div class="item-title h6 mb-1 fw-normal opacity-50">介面設定</div>
+                                <button class="btn btn-midblue px-3 py-2 border-0" role="button">深色模式</button>
+                                <button class="btn btn-outline-midblue text-light px-3 py-2 border-0" role="button">淺色模式</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-md-0 mb-2">

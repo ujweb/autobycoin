@@ -1178,7 +1178,7 @@ $navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;
 // Dropdown menu container and contents.
 
 // scss-docs-start dropdown-variables
-$dropdown-min-width:                8rem !default;
+$dropdown-min-width:                15rem !default;
 $dropdown-padding-x:                0 !default;
 $dropdown-padding-y:                .5rem !default;
 $dropdown-spacer:                   .125rem !default;
@@ -1190,7 +1190,7 @@ $dropdown-border-radius:            $border-radius !default;
 $dropdown-border-width:             $border-width !default;
 $dropdown-inner-border-radius:      subtract($dropdown-border-radius, $dropdown-border-width) !default;
 $dropdown-divider-bg:               $dropdown-border-color !default;
-$dropdown-divider-margin-y:         $spacer * .5 !default;
+$dropdown-divider-margin-y:         $spacer * 1 !default;
 $dropdown-box-shadow:               $box-shadow !default;
 
 $dropdown-link-color:               $gray-900 !default;
@@ -1211,13 +1211,13 @@ $dropdown-header-padding:           $dropdown-padding-y $dropdown-item-padding-x
 
 // scss-docs-start dropdown-dark-variables
 $dropdown-dark-color:               $white !default;
-$dropdown-dark-bg:                  $midblue !default;
+$dropdown-dark-bg:                  $black !default;
 $dropdown-dark-border-color:        $dropdown-border-color !default;
 $dropdown-dark-divider-bg:          $dropdown-divider-bg !default;
 $dropdown-dark-box-shadow:          null !default;
 $dropdown-dark-link-color:          $dropdown-dark-color !default;
 $dropdown-dark-link-hover-color:    $white !default;
-$dropdown-dark-link-hover-bg:       $bluewood !default;
+$dropdown-dark-link-hover-bg:       transparent !default;
 $dropdown-dark-link-active-color:   $dropdown-link-active-color !default;
 $dropdown-dark-link-active-bg:      $dropdown-link-active-bg !default;
 $dropdown-dark-link-disabled-color: $gray-500 !default;
