@@ -133,12 +133,14 @@ table {
         }
         &.sorting_desc {
             .sort > .material-icons:first-child {
-                opacity: 0;
+                display: none;
+                margin-bottom: 0;
             }
         }
         &.sorting_asc {
             .sort > .material-icons:last-child {
-                opacity: 0;
+                display: none;
+                margin-top: 0;
             }
         }
     }

@@ -13097,11 +13097,13 @@ table th .sort > .material-icons:last-child {
 }
 
 table th.sorting_desc .sort > .material-icons:first-child {
-  opacity: 0;
+  display: none;
+  margin-bottom: 0;
 }
 
 table th.sorting_asc .sort > .material-icons:last-child {
-  opacity: 0;
+  display: none;
+  margin-top: 0;
 }
 
 table td {
