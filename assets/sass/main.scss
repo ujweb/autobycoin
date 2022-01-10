@@ -49,9 +49,6 @@ table {
                 width: 20px;
             }
         }
-        &:first-child {
-            background-color: $bluewood;
-        }
         + tr + tr {
             td {
                 border-top: 1px solid rgba($white, 0.1);
