@@ -132,15 +132,21 @@ table {
             }
         }
         &.sorting_desc {
-            .sort > .material-icons:first-child {
-                display: none;
+            .sort > .material-icons {
+                margin-top: 0;
                 margin-bottom: 0;
+                &:first-child {
+                    display: none;
+                }
             }
         }
         &.sorting_asc {
-            .sort > .material-icons:last-child {
-                display: none;
+            .sort > .material-icons {
                 margin-top: 0;
+                margin-bottom: 0;
+                &:last-child {
+                    display: none;
+                }
             }
         }
     }

@@ -13096,14 +13096,22 @@ table th .sort > .material-icons:last-child {
   margin-top: -0.75em;
 }
 
+table th.sorting_desc .sort > .material-icons {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 table th.sorting_desc .sort > .material-icons:first-child {
   display: none;
+}
+
+table th.sorting_asc .sort > .material-icons {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
 table th.sorting_asc .sort > .material-icons:last-child {
   display: none;
-  margin-top: 0;
 }
 
 table td {
