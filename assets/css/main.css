@@ -12988,10 +12988,6 @@ table tr::before, table tr::after {
   }
 }
 
-table tr:first-child {
-  background-color: #2C354D;
-}
-
 table tr + tr + tr td {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
