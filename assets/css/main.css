@@ -12968,7 +12968,16 @@ nav .dropdown .dropdown-menu button.btn + button.btn {
 }
 
 table {
+  border-radius: 0.625rem;
   overflow: hidden;
+}
+
+.dataTables_scrollHead table {
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.dataTables_scrollBody table {
+  border-radius: 0 0 0.625rem 0.625rem;
 }
 
 table tr {
@@ -12979,7 +12988,6 @@ table tr::before, table tr::after {
   content: "";
   display: block;
   width: 5px;
-  height: 60px;
 }
 
 @media (min-width: 992px) {

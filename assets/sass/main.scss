@@ -37,14 +37,20 @@ nav {
 }
 
 table {
+    border-radius: $border-radius-md;
     overflow: hidden;
+    .dataTables_scrollHead & {
+        border-radius: $border-radius-md $border-radius-md 0 0;
+    }
+    .dataTables_scrollBody & {
+        border-radius: 0 0 $border-radius-md $border-radius-md;
+    }
     tr {
         position: relative;
         &::before,
         &::after {
             @include beforeafter('', block);
             width: 5px;
-            height: 60px;
             @include media-breakpoint-up(lg) {
                 width: 20px;
             }
