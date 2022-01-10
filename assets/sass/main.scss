@@ -125,16 +125,20 @@ table {
                 display: block;
                 &:first-child {
                     margin-bottom: -0.75em;
-                    .sorting_desc & {
-                        opacity: 0;
-                    }
                 }
                 &:last-child {
                     margin-top: -0.75em;
-                    .sorting_asc & {
-                        opacity: 0;
-                    }
                 }
+            }
+        }
+        .sorting_desc {
+            .sort > .material-icons:first-child {
+                opacity: 0;
+            }
+        }
+        .sorting_asc {
+            .sort > .material-icons:last-child {
+                opacity: 0;
             }
         }
     }
