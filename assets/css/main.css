@@ -13082,6 +13082,7 @@ table th {
 table th .sort {
   -webkit-transform: scaleX(0.85);
           transform: scaleX(0.85);
+  cursor: pointer;
 }
 
 table th .sort > .material-icons {

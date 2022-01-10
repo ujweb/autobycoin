@@ -121,6 +121,7 @@ table {
         font-weight: normal;
         .sort {
             transform: scaleX(0.85);
+            cursor: pointer;
             > .material-icons {
                 display: block;
                 &:first-child {
