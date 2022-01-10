@@ -12988,7 +12988,7 @@ table tr::before, table tr::after {
   }
 }
 
-table tr + tr + tr td {
+table tr + tr td {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -13094,5 +13094,9 @@ table th .sort > .material-icons:first-child {
 
 table th .sort > .material-icons:last-child {
   margin-top: -0.75em;
+}
+
+table td {
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
