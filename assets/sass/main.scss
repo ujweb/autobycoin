@@ -77,43 +77,43 @@ table {
             }
         }
         &:first-child {
-            width: 33%;
+            width: 33% !important;
             @include media-breakpoint-up(lg) {
-                width: 8.3%;
+                width: 8.3% !important;
             }
         }
         &:nth-child(2)  {
-            width: 33%;
+            width: 33% !important;
             @include media-breakpoint-up(lg) {
-                width: 7.05%;
+                width: 7.05% !important;
             }
         }
         &:nth-child(3)  {
-            width: 10%;
+            width: 10% !important;
         }
         &:nth-child(4)  {
-            width: 7.87%;
+            width: 7.87% !important;
         }
         &:nth-child(5)  {
-            width: 8.3%;
+            width: 8.3% !important;
         }
         &:nth-child(6)  {
-            width: 12.5%;
+            width: 12.5% !important;
         }
         &:nth-child(7)  {
-            width: 10.4%;
+            width: 10.4% !important;
         }
         &:nth-child(8)  {
-            width: 10.82%;
+            width: 10.82% !important;
         }
         &:nth-child(9)  {
-            width: 34%;
+            width: 34% !important;
             @include media-breakpoint-up(lg) {
-                width: 8.98%;
+                width: 8.98% !important;
             }
         }
         &:last-child {
-            width: 12.2%;
+            width: 12.2% !important;
         }
     }
     th {
