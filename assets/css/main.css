@@ -13077,12 +13077,12 @@ table th:last-child, table td:last-child {
 table th {
   font-size: 0.875rem;
   font-weight: normal;
+  cursor: pointer;
 }
 
 table th .sort {
   -webkit-transform: scaleX(0.85);
           transform: scaleX(0.85);
-  cursor: pointer;
 }
 
 table th .sort > .material-icons {
