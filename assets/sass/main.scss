@@ -108,6 +108,7 @@ nav {
 }
 
 table {
+    width: 100% !important;
     border-radius: $border-radius-md;
     overflow: hidden;
     .dataTables_scrollHead & {
@@ -196,13 +197,13 @@ table {
                 }
             }
             &:first-child {
-                width: 33% !important;
+                width: 32% !important;
                 @include media-breakpoint-up(lg) {
                     width: 8.4% !important;
                 }
             }
             &:nth-child(2)  {
-                width: 33% !important;
+                width: 32% !important;
                 @include media-breakpoint-up(lg) {
                     width: 7.15% !important;
                 }
@@ -232,6 +233,7 @@ table {
                 width: 8.4% !important;
             }
             &:last-child {
+                width: auto !important;
                 @include media-breakpoint-up(lg) {
                     width: 11.5% !important;
                 }
