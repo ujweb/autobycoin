@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>帳戶總覽</title>
+    <title>手動提幣處理</title>
     <link rel="stylesheet" href="assets/css/main.min.css">
 </head>
-<body class="overview-page text-white bg-darkblue">
+<body class="withdrawal-page text-white bg-darkblue">
     <nav class="navbar navbar-expand-md navbar-dark bg-black">
         <div class="container">
             <button class="navbar-toggler me-lg-0 me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -92,116 +92,103 @@
     </nav>
     <main class="py-6">
         <div class="container">
-            <section class="px-lg-3 px-2">
-                <div class="row align-items-center mb-lg-5 mb-3">
-                    <div class="col-6">
-                        <h1 class="mb-0">帳戶總覽</h1>
-                    </div>
-                    <div class="col-6 text-end">
-                        <a class="btn btn-md btn-royalblue" href="withdrawal.html" role="button">提幣</a>
-                    </div>
+            <section class="px-lg-0 px-2 pb-6">
+                <div class="d-flex align-items-center justify-content-between px-lg-3 pt-lg-3 pt-2 pb-3">
+                    <h2 class="h1 mb-0">
+                        手動提幣
+                    </h2>
                 </div>
-                <div class="row align-items-end mb-5">
-                    <div class="col-lg-2 col-6">
-                        <div class="item-title h6 mb-1 fw-normal opacity-50">預估總資產</div>
-                        <h4 class="h2 mb-0">1,430,600</h4>
-                    </div>
-                    <div class="col-lg-2 col-6">
-                        <div class="item-title h6 mb-1 fw-normal opacity-50">浮動盈虧合計</div>
-                        <h4 class="h2 mb-0">1,045,110</h4>
-                    </div>
-                </div>
-            </section>
-            <section class="px-lg-0 px-2">
                 <div class="row align-items-end">
-                    <div class="col-lg-7 bg-midblue rounded-4 px-xl-5 px-lg-3 py-md-4 px-2 pt-4">
+                    <div class="col-md-auto bg-midblue rounded-4 px-xl-5 px-lg-3 py-md-4 px-2 pt-4">
                         <div class="row align-items-end">
                             <div class="col-lg-12 mb-xl-4 mb-3">
                                 <img src="assets/images/binance.svg" height="20" alt="binance logo">
                             </div>
-                            <div class="col-lg col-md-3 col-6 mb-md-0 mb-4">
-                                <div class="item-title h6 mb-1 fw-normal opacity-50">預估資產</div>
-                                <h4 class="h2 mb-0">540,099</h4>
-                            </div>
-                            <div class="col-lg col-md-3 col-6 mb-md-0 mb-4">
-                                <div class="item-title h6 mb-1 fw-normal opacity-50">浮動盈虧合計</div>
-                                <h4 class="h2 mb-0">84,000</h4>
-                            </div>
-                            <div class="col-lg col-md-3 col-6 mb-md-0 mb-4">
-                                <div class="item-title h6 mb-1 fw-normal opacity-50">錢包餘額</div>
+                            <div class="col-6 mb-md-0 mb-4">
+                                <div class="item-title h6 mb-1 fw-normal opacity-50">合約錢包餘額</div>
                                 <h4 class="h2 mb-0">6,000</h4>
                             </div>
-                            <div class="col-lg col-md-3 col-6 mb-md-0 mb-4">
+                            <div class="col-6 mb-md-0 mb-4">
                                 <div class="item-title h6 mb-1 fw-normal opacity-50">現貨錢包餘額</div>
                                 <h4 class="h2 mb-0">507,370</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md bg-midblue rounded-4 px-xl-5 px-lg-3 px-2 py-md-4 pt-4 ms-xl-4 ms-lg-2 mt-lg-0 mt-2">
+                    <div class="col-md-auto bg-midblue rounded-4 px-xl-5 px-lg-3 px-2 py-md-4 pt-4 ms-md-4 mt-md-0 mt-2">
                         <div class="row align-items-end">
                             <div class="col-lg-12 mb-xl-4 mb-3">
                                 <img src="assets/images/ftx.svg" height="20" alt="ftx logo">
                             </div>
-                            <div class="col-lg col-md-3 col-6 mb-md-0 mb-4">
-                                <div class="item-title h6 mb-1 fw-normal opacity-50">預估資產</div>
-                                <h4 class="h2 mb-0">507,006</h4>
-                            </div>
-                            <div class="col-lg col-md-3 col-6 mb-md-0 mb-4">
-                                <div class="item-title h6 mb-1 fw-normal opacity-50">浮動盈虧合計</div>
-                                <h4 class="h2 mb-0">510,067</h4>
-                            </div>
-                            <div class="col-lg col-md-3 col-6 mb-md-0 mb-4">
+                            <div class="col-6 mb-md-0 mb-4">
                                 <div class="item-title h6 mb-1 fw-normal opacity-50">錢包餘額</div>
                                 <h4 class="h2 mb-0">600,890</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7 px-xl-5 px-lg-3 px-2 py-lg-6 py-4">
-                        <div class="row align-items-end">
-                            <div class="col-md col-6 mb-lg-0 mb-4">
-                                <div class="item-title h6 mb-1 fw-normal opacity-50">未平倉面額小計</div>
-                                <h4 class="h2 mb-0">65</h4>
-                            </div>
-                            <div class="col-md col-6 mb-lg-0 mb-4">
-                                <div class="item-title h6 mb-1 fw-normal opacity-50">倉位面額佔比</div>
-                                <h4 class="h2 mb-0">50%</h4>
-                            </div>
-                            <div class="col-md col-6 mb-lg-0 mb-4">
-                                <div class="item-title h6 mb-1 fw-normal opacity-50">
-                                    <div class="d-inline-block tooltips" data-bs-placement="top" data-bs-toggle="tooltip" data-bs-original-title="tooltip文字文字文字文字文字">
-                                        總資金利息利潤 (72HR)
-                                    </div>
-                                </div>
-                                <h4 class="h2 mb-0">6.694</h4>
-                            </div>
-                            <div class="col-md col-6 mb-lg-0 mb-4">
-                                <div class="item-title h6 mb-1 fw-normal opacity-50">總倉位面額</div>
-                                <h4 class="h2 mb-0">1,045,079</h4>
-                            </div>
+                </div>
+                <div class="row align-items-end">
+                    <div class="col-md-auto mt-5">
+                        <div class="h6 mb-1 fw-normal opacity-50 px-lg-3 px-2">從</div>
+                        <div class="row">
+                            <select class="form-select form-select-lg form-select-midblue rounded-4 fs-5 ps-xl-5 ps-lg-3 ps-2">
+                                <option value="binanceSpotWallet" selected>BINANCE 合約錢包</option>
+                                <option value="binanceFuturesWallet">BINANCE 現貨錢包</option>
+                                <option value="ftxWallet">FTX 錢包</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-auto"></div>
+                    <div class="col-md-auto mt-3">
+                        <div class="h6 mb-1 fw-normal opacity-50 px-lg-3 px-2">至</div>
+                        <div class="row">
+                            <select class="form-select form-select-lg form-select-midblue rounded-4 fs-5 ps-xl-5 ps-lg-3 ps-2">
+                                <option value="binanceSpotWallet">BINANCE 合約錢包</option>
+                                <option value="binanceFuturesWallet" selected>BINANCE 現貨錢包</option>
+                                <option value="ftxWallet">FTX 錢包</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-auto px-1"></div>
+                    <div class="col-md-auto mt-4 px-md-2 px-0">
+                        <button class="btn btn-md btn-royalblue w-md-auto w-100" type="button" data-bs-toggle="modal" data-bs-target="#withdrawalModal">提幣</button>
+                    </div>
+                </div>
+            </section>
+            <section class="pt-3">
+                <div class="position-relative px-lg-3 pt-lg-3 pt-2 pb-3">
+                    <div class="d-flex align-items-center justify-content-between mb-md-0 mb-3">
+                        <div class="d-flex align-items-center mb-md-3">
+                            <h2 class="h1 mb-0 d-inline-block">歷史紀錄</h2>
+                            <select class="form-select form-select-transparent">
+                                <option value="binance">BINANCE</option>
+                                <option value="ftx">FTX</option>
+                            </select>
+                        </div>
+                        <div class="search search-table bottom-0 end-0 me-md-3 mb-md-3">
+                            <span class="material-icons-round opacity-50">search</span>
+                            <input type="email" class="form-control" id="searchTable" placeholder=" ">
+                            <label for="searchTable" class="d-flex align-items-center opacity-50">
+                                查詢
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex">
+                            <button class="btn btn-darkblue me-3" type="button">充幣</button>
+                            <button class="btn btn-midblue me-3" type="button">提幣</button>
+                            <button class="btn btn-darkblue me-3" type="button">劃轉</button>
                         </div>
                     </div>
                 </div>
             </section>
-            <div class="d-flex align-items-center justify-content-between px-lg-3 pt-lg-3 pt-2 pb-3">
-                <h2 class="h1 mb-0">
-                    持倉列表
-                </h2>
-                <div class="search search-table">
-                    <span class="material-icons-round opacity-50">search</span>
-                    <input type="email" class="form-control" id="searchTable" placeholder=" ">
-                    <label for="searchTable" class="d-flex align-items-center opacity-50">
-                        <span>查詢</span><span class="d-lg-block d-none">商品代號</span>
-                    </label>
-                </div>
-            </div>
-            <section class="overview-table px-lg-0 px-2">
+            <section class="withdrawal-table px-lg-0 px-2">
                 <div class="row">
                     <table class="w-100 bg-midblue">
                         <thead class="bg-bluewood">
                             <tr>
                                 <th>
                                     <div class="d-flex flex-row align-items-center">
-                                        <span class="opacity-50">商品代號</span>
+                                        <span class="opacity-50">時間</span>
                                         <span class="sort d-flex flex-column opacity-50">
                                             <span class="material-icons h5 mb-0">arrow_drop_up</span>
                                             <span class="material-icons h5 mb-0">arrow_drop_down</span>
@@ -210,7 +197,7 @@
                                 </th>
                                 <th>
                                     <div class="d-flex flex-row align-items-center">
-                                        <span class="opacity-50">月報率</span>
+                                        <span class="opacity-50">幣種</span>
                                         <span class="sort d-flex flex-column opacity-50">
                                             <span class="material-icons h5 mb-0">arrow_drop_up</span>
                                             <span class="material-icons h5 mb-0">arrow_drop_down</span>
@@ -219,7 +206,7 @@
                                 </th>
                                 <th>
                                     <div class="d-flex flex-row align-items-center">
-                                        <span class="opacity-50">binance倉位</span>
+                                        <span class="opacity-50">數量</span>
                                         <span class="sort d-flex flex-column opacity-50">
                                             <span class="material-icons h5 mb-0">arrow_drop_up</span>
                                             <span class="material-icons h5 mb-0">arrow_drop_down</span>
@@ -228,7 +215,7 @@
                                 </th>
                                 <th>
                                     <div class="d-flex flex-row align-items-center">
-                                        <span class="opacity-50">FTX倉位</span>
+                                        <span class="opacity-50">地址</span>
                                         <span class="sort d-flex flex-column opacity-50">
                                             <span class="material-icons h5 mb-0">arrow_drop_up</span>
                                             <span class="material-icons h5 mb-0">arrow_drop_down</span>
@@ -237,52 +224,7 @@
                                 </th>
                                 <th>
                                     <div class="d-flex flex-row align-items-center">
-                                        <span class="opacity-50">浮動盈虧價差</span>
-                                        <span class="sort d-flex flex-column opacity-50">
-                                            <span class="material-icons h5 mb-0">arrow_drop_up</span>
-                                            <span class="material-icons h5 mb-0">arrow_drop_down</span>
-                                        </span>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="d-flex flex-row align-items-center">
-                                        <span class="opacity-50">binance浮動盈虧</span>
-                                        <span class="sort d-flex flex-column opacity-50">
-                                            <span class="material-icons h5 mb-0">arrow_drop_up</span>
-                                            <span class="material-icons h5 mb-0">arrow_drop_down</span>
-                                        </span>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="d-flex flex-row align-items-center">
-                                        <span class="opacity-50">FTX浮動盈虧</span>
-                                        <span class="sort d-flex flex-column opacity-50">
-                                            <span class="material-icons h5 mb-0">arrow_drop_up</span>
-                                            <span class="material-icons h5 mb-0">arrow_drop_down</span>
-                                        </span>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="d-flex flex-row align-items-center">
-                                        <span class="opacity-50">資金利潤利息</span>
-                                        <span class="sort d-flex flex-column opacity-50">
-                                            <span class="material-icons h5 mb-0">arrow_drop_up</span>
-                                            <span class="material-icons h5 mb-0">arrow_drop_down</span>
-                                        </span>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="d-flex flex-row align-items-center">
-                                        <span class="opacity-50">3日投報率</span>
-                                        <span class="sort d-flex flex-column opacity-50">
-                                            <span class="material-icons h5 mb-0">arrow_drop_up</span>
-                                            <span class="material-icons h5 mb-0">arrow_drop_down</span>
-                                        </span>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="d-flex flex-row align-items-center">
-                                        <span class="opacity-50">倉位總合約面值</span>
+                                        <span class="opacity-50">狀態</span>
                                         <span class="sort d-flex flex-column opacity-50">
                                             <span class="material-icons h5 mb-0">arrow_drop_up</span>
                                             <span class="material-icons h5 mb-0">arrow_drop_down</span>
@@ -294,39 +236,36 @@
                         <tbody>
                             <tr>
                                 <td class="fw-bold">
-                                    <a href="#!" class="d-block link-light text-decoration-none">
-                                        <img class="d-inline-block align-middle me-1" src="https://cryptologos.cc/logos/thumbs/bitcoin.png?v=017" width="22" alt="">
-                                        <span class="d-inline-block align-middle">BTC</span>
-                                    </a>
+                                    2021-11-28 22:37:25	
                                 </td>
                                 <td class="fw-bold">
-                                    3.37%
+                                    USDT
                                 </td>
                                 <td class="fw-bold">
-                                    15
+                                    900
                                 </td>
                                 <td class="fw-bold">
-                                    -15
+                                    TTVubTAZvqbVKq8hqyCCzLadw7AXNnyTJ3
                                 </td>
                                 <td class="fw-bold">
-                                    0.04%
+                                    已完成
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">
+                                    2021-11-28 22:37:25	
                                 </td>
                                 <td class="fw-bold">
-                                    <span class="text-danger">-20.0476</span>
+                                    USDT
                                 </td>
                                 <td class="fw-bold">
-                                    <span class="text-success">
-                                        +20.0476
-                                    </span>
+                                    100
                                 </td>
                                 <td class="fw-bold">
-                                    20.0476
+                                    TTVubTAZvqbVKq8hqyCCzLadw7AXNnyTJ3
                                 </td>
                                 <td class="fw-bold">
-                                    2.476%
-                                </td>
-                                <td class="fw-bold">
-                                    20.0476
+                                    進行中
                                 </td>
                             </tr>
                         </tbody>
@@ -335,12 +274,125 @@
             </section>
         </div>
     </main>
+    <div class="modal fade" id="withdrawalModal" tabindex="-1" aria-labelledby="withdrawalModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content p-5 bg-black rounded-4">
+                <h3 class="h1 mb-5">提幣</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="usdtAmount" class="form-label">USDT 數量</label>
+                        <input type="number" class="form-control form-control-md" id="usdtAmount" name="usdtAmount">
+                    </div>
+                    <div class="mb-3">
+                        <label for="FTX_PARAMS_MF2_CODE" class="form-label">Google 二次驗證碼</label>
+                        <input type="text" class="form-control form-control-md" id="FTX_PARAMS_MF2_CODE" name="FTX_PARAMS_MF2_CODE">
+                    </div>
+                    <div class="mb-3">
+                        <label for="FTX_PARAMS_PASSWORD" class="form-label">提現密碼</label>
+                        <input type="password" class="form-control form-control-md" id="FTX_PARAMS_PASSWORD" name="FTX_PARAMS_PASSWORD">
+                    </div>
+                    <div class="col-12 mt-5">
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" class="btn btn-md btn-secondary w-100" data-bs-dismiss="modal">取消</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-md btn-royalblue w-100">確認</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="alertModal" tabindex="-1" aria-labelledby="alertModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content p-5 bg-black rounded-4">
+                <p class="fs-4 text-center mb-0">
+                    BINANCE合約錢包餘額為 0<br/>
+                    無法提幣
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.2/js/bootstrap.bundle.min.js"></script>
     <script>
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
+        // Iterate over each select element
+        $('select').each(function () {
+
+            // Cache the number of options
+            var $this = $(this),
+                numberOfOptions = $(this).children('option').length;
+
+            // Hides the select element
+            $this.addClass('s-hidden');
+
+            // Wrap the select element in a div
+            $this.wrap('<div class="select"></div>');
+
+            // Insert a styled div to sit over the top of the hidden select element
+            $this.after('<div class="select-style"></div>');
+
+            // Cache the styled div
+            var $styledSelect = $this.next('div.select-style');
+            if ( $this.hasClass('form-select-transparent') ) {
+                $styledSelect.addClass('select-transparent h1 mb-0');
+            } else if ( $this.hasClass('form-select-midblue') ) {
+                $styledSelect.addClass('form-select form-select-lg rounded-4 fs-5 ps-xl-5 ps-lg-3 ps-2');
+            }
+
+            // Show the first select option in the styled div
+            $styledSelect.text($this.children('option').eq(0).text());
+
+            // Insert an unordered list after the styled div and also cache the list
+            var $list = $('<ul />', {
+                'class': 'options'
+            }).insertAfter($styledSelect);
+
+            // Insert a list item into the unordered list for each select option
+            for (var i = 0; i < numberOfOptions; i++) {
+                $('<li />', {
+                    text: $this.children('option').eq(i).text(),
+                    rel: $this.children('option').eq(i).val()
+                }).appendTo($list);
+            }
+
+            // Cache the list items
+            var $listItems = $list.children('li');
+
+            // Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
+            $styledSelect.click(function (e) {
+                e.stopPropagation();
+                $styledSelect.removeClass('active');
+                $('ul.options').slideUp();
+                if ( $(this).hasClass('active') ) {
+                    $(this).removeClass('active').next('ul.options').slideUp();
+                } else {
+                    $(this).toggleClass('active').next('ul.options').slideToggle();
+                }
+            });
+
+            // Hides the unordered list when a list item is clicked and updates the styled div to show the selected list item
+            // Updates the select element to have the value of the equivalent option
+            $listItems.click(function (e) {
+                e.stopPropagation();
+                $styledSelect.text($(this).text()).removeClass('active');
+                $this.val($(this).attr('rel'));
+                $list.slideUp();
+                /* alert($this.val()); Uncomment this for demonstration! */
+            });
+
+            // Hides the unordered list when clicking outside of it
+            $(document).click(function () {
+                $styledSelect.removeClass('active');
+                $list.slideUp();
+            });
+        });
     </script>
 </body>
 </html>

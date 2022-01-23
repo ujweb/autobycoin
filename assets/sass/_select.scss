@@ -1,0 +1,57 @@
+.s-hidden {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+	font-size: 1rem !important;
+	border: 0;
+	visibility: hidden;
+	z-index: -1;
+}
+.select {
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	cursor: pointer;
+}
+.select-style {
+	width: 100%;
+	&.select-transparent {
+		display: block;
+		padding: 5px $form-select-indicator-padding 5px 0;
+		background-image: escape-svg($form-select-indicator);
+		background-repeat: no-repeat;
+		background-position: $form-select-bg-position;
+		background-size: $form-select-bg-size;
+		.withdrawal-page & {
+			padding: 5px 1em 5px 5px;
+			background-position: right 0.25em center;
+		}
+	}
+}
+.options {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+    min-width: max-content;
+	margin: 0;
+	padding: 0;
+	color: $white;
+	font-size: 1rem;
+	font-weight: normal;
+	list-style: none;
+	background-color: $black;
+	border-radius: 0.625rem;
+	overflow: hidden;
+	z-index: 999;
+}
+.options li {
+	padding: 13px 30px;
+}
+.options li:hover {
+	background-color: rgba($white, 0.1);
+}

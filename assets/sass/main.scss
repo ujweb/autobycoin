@@ -9,10 +9,20 @@
 
 @import "../../node_modules/bootstrap/scss/bootstrap"; // Bootstrap 完整原始碼
 
+@import "select";
+
 .btn-md {
-    @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
-    @include media-breakpoint-up(lg) {
-        @include button-size($btn-padding-y-md, $btn-padding-x-md, $btn-font-size-md, $btn-border-radius-md);
+    @include button-size($btn-padding-y-md, $btn-padding-x-md, $btn-font-size-md, $btn-border-radius-md);
+    .overview-page & {
+        @include media-breakpoint-down(lg) {
+            @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-border-radius-sm);
+        }
+    }
+    .withdrawal-page & {
+        @include media-breakpoint-down(lg) {
+            padding-top: .65rem;
+            padding-bottom: .65rem;
+        }
     }
 }
 
@@ -24,8 +34,13 @@
 
 nav {
     .dropdown {
-        .dropdown-toggle::after {
-            display: none;
+        .dropdown-toggle {
+            &.show {
+                color: $royalblue;
+            }
+            &::after {
+                display: none;
+            }
         }
         .dropdown-menu {
             font-size: 0;
@@ -34,6 +49,62 @@ nav {
             }
         }
     }
+}
+
+.tooltips {
+    padding-bottom: 2px;
+    border-bottom: 1px dashed rgba($white, 0.5);
+    cursor: pointer;
+}
+
+.search-table {
+    position: relative;
+    .withdrawal-page & {
+        @include media-breakpoint-up(md) {
+            position: absolute;
+        }
+    }
+    span.material-icons-round {
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        font-size: 1.25rem;
+        transform: translateY(-50%);
+    }
+    label {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 25px 0 50px;
+        font-size: 0.875rem;
+    }
+    input {
+        width: 110px;
+        height: 50px;
+        padding: 10px 25px 10px 50px;
+        color: $white;
+        font-size: 0.875rem;
+        line-height: 30px;
+        border-radius: 50px;
+        border: 1px solid $midblue;
+        @include media-breakpoint-up(lg) {
+            width: 160px;
+        }
+        &::-moz-placeholder,
+        &::placeholder {
+            color: transparent;
+        }
+        &:focus ~ label,
+        &:not(:placeholder-shown) ~ label {
+            display: none !important;
+        }
+    }
+}
+
+.dataTables_filter {
+    display: none;
 }
 
 table {
@@ -70,57 +141,6 @@ table {
             padding-left: 10px;
             padding-right: 10px;
         }
-        &:nth-child(3),
-        &:nth-child(4),
-        &:nth-child(5),
-        &:nth-child(6),
-        &:nth-child(7),
-        &:nth-child(8),
-        &:nth-child(10) {
-            display: none;
-            @include media-breakpoint-up(lg) {
-                display: table-cell;
-            }
-        }
-        &:first-child {
-            width: 33% !important;
-            @include media-breakpoint-up(lg) {
-                width: 8.3% !important;
-            }
-        }
-        &:nth-child(2)  {
-            width: 33% !important;
-            @include media-breakpoint-up(lg) {
-                width: 7.05% !important;
-            }
-        }
-        &:nth-child(3)  {
-            width: 10% !important;
-        }
-        &:nth-child(4)  {
-            width: 7.87% !important;
-        }
-        &:nth-child(5)  {
-            width: 8.3% !important;
-        }
-        &:nth-child(6)  {
-            width: 12.5% !important;
-        }
-        &:nth-child(7)  {
-            width: 10.4% !important;
-        }
-        &:nth-child(8)  {
-            width: 10.82% !important;
-        }
-        &:nth-child(9)  {
-            width: 34% !important;
-            @include media-breakpoint-up(lg) {
-                width: 8.98% !important;
-            }
-        }
-        &:last-child {
-            width: 12.2% !important;
-        }
     }
     th {
         font-size: 0.875rem;
@@ -130,6 +150,7 @@ table {
             transform: scaleX(0.85);
             > .material-icons {
                 display: block;
+                margin-right: -0.25em;
                 &:first-child {
                     margin-bottom: -0.75em;
                 }
@@ -159,5 +180,111 @@ table {
     }
     td {
         font-weight: bold;
+    }
+    .overview-table & {
+        th, td {
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7),
+            &:nth-child(8),
+            &:nth-child(10) {
+                display: none;
+                @include media-breakpoint-up(lg) {
+                    display: table-cell;
+                }
+            }
+            &:first-child {
+                width: 33% !important;
+                @include media-breakpoint-up(lg) {
+                    width: 8.4% !important;
+                }
+            }
+            &:nth-child(2)  {
+                width: 33% !important;
+                @include media-breakpoint-up(lg) {
+                    width: 7.15% !important;
+                }
+            }
+            &:nth-child(3)  {
+                width: 10% !important;
+            }
+            &:nth-child(4)  {
+                width: 7.7% !important;
+            }
+            &:nth-child(5)  {
+                width: 10.3% !important;
+            }
+            &:nth-child(6)  {
+                width: 12% !important;
+            }
+            &:nth-child(7)  {
+                width: 10.4% !important;
+            }
+            &:nth-child(8)  {
+                width: 10.92% !important;
+                @include media-breakpoint-up(lg) {
+                    width: 10.3% !important;
+                }
+            }
+            &:nth-child(9)  {
+                width: 34% !important;
+                @include media-breakpoint-up(lg) {
+                    width: 8.4% !important;
+                }
+            }
+            &:last-child {
+                width: 11.5% !important;
+            }
+        }
+    }
+    .withdrawal-table & {
+        th, td {
+            &:nth-child(2),
+            &:nth-child(4) {
+                display: none;
+                @include media-breakpoint-up(md) {
+                    display: table-cell;
+                }
+            }
+            &:nth-child(1) {
+                width: 17%;
+                @include media-breakpoint-up(md) {
+                    width: 17%;
+                }
+                @include media-breakpoint-up(lg) {
+                    width: 22%;
+                }
+            }
+            &:nth-child(2),
+            &:nth-child(3) {
+                width: 10.5%;
+                @include media-breakpoint-up(md) {
+                    width: 10.5%;
+                }
+                @include media-breakpoint-up(lg) {
+                    width: 12%;
+                }
+            }
+            &:nth-child(5) {
+                width: 12%;
+            }
+        }
+    }
+}
+
+.modal {
+    .withdrawal-page & {
+        input {
+            background-color: rgba($white, 0.1);
+            border-color: rgba(255,255,255,0.1);
+            &[type="number"] {
+                appearance: none;
+                &::-webkit-inner-spin-button {
+                    appearance: none;
+                }
+            }
+        }
     }
 }
