@@ -189,7 +189,7 @@ table {
             &:nth-child(6),
             &:nth-child(7),
             &:nth-child(8),
-            &:nth-child(10) {
+            &:nth-child(9) {
                 display: none;
                 @include media-breakpoint-up(lg) {
                     display: table-cell;
@@ -229,13 +229,12 @@ table {
                 }
             }
             &:nth-child(9)  {
-                width: 34% !important;
-                @include media-breakpoint-up(lg) {
-                    width: 8.4% !important;
-                }
+                width: 8.4% !important;
             }
             &:last-child {
-                width: 11.5% !important;
+                @include media-breakpoint-up(lg) {
+                    width: 11.5% !important;
+                }
             }
         }
     }
